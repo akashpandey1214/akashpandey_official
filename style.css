@@ -1,0 +1,40 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.section {
+    padding: 80px 20px;
+}
+
+h1, h2, h3 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.tagline {
+    color: #555;
+    margin: 10px 0;
+}
+
+.project-card, .certification-card {
+    background: #fff;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.project-card:hover, .certification-card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background: #f8f9fa;
+    color: #666;
+    padding: 20px 0;
+}
