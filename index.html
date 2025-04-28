@@ -1,3 +1,4 @@
+<!-- index.html - Upgraded Version with Tagline -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,86 +8,106 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
+<!-- Hero Section -->
 <header class="hero-section">
     <div class="container text-center">
         <h1>Akash Pandey</h1>
+        <p class="tagline">Turning Data into Decisions</p>
         <h3><span class="typing"></span></h3>
         <div class="mt-4">
-            <a href="mailto:axpandey9@shockers.wichita.edu" class="btn btn-outline-light">Email Me</a>
-            <a href="https://linkedin.com/in/pandeyakashofficial" target="_blank" class="btn btn-outline-light">LinkedIn</a>
+            <a href="mailto:axpandey9@shockers.wichita.edu" class="btn btn-outline-primary">Email Me</a>
+            <a href="https://linkedin.com/in/pandeyakashofficial" target="_blank" class="btn btn-outline-primary">LinkedIn</a>
             <a href="AkashPandeyResume.pdf" download class="btn btn-primary">Download Resume</a>
         </div>
     </div>
 </header>
 
-<section id="about" class="section">
+<!-- About Section -->
+<section id="about" class="section" data-aos="fade-up">
     <div class="container">
-        <h2>About Me</h2>
-        <p>Master of Business Analytics student at Wichita State University, passionate about Business Analysis, Data Science, and Web Development. Certified Digital Marketer and former Child Rights Activist.</p>
-    </div>
-</section>
-
-<section id="skills" class="section">
-    <div class="container">
-        <h2>Skills</h2>
-        <div class="row">
-            <div class="col-md-3">HTML/CSS/JS</div>
-            <div class="col-md-3">Python</div>
-            <div class="col-md-3">SEO & Google Analytics</div>
-            <div class="col-md-3">Figma & UI/UX</div>
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center">
+                <img src="profile.jpg" alt="Akash Pandey" class="img-fluid rounded-circle about-img">
+            </div>
+            <div class="col-md-8">
+                <h2>About Me</h2>
+                <p>I am a Master's student in Business Analytics at Wichita State University. With a passion for Business Analysis, Data Science, and Web Development, I combine technical expertise with creativity. Certified Google Digital Marketer and UN Child Rights Activist.</p>
+            </div>
         </div>
     </div>
 </section>
 
-<section id="experience" class="section">
+<!-- Skills Section -->
+<section id="skills" class="section" data-aos="fade-up">
+    <div class="container">
+        <h2>Skills</h2>
+        <div class="row text-center">
+            <div class="col-6 col-md-3"><i class="fab fa-python fa-2x"></i><p>Python</p></div>
+            <div class="col-6 col-md-3"><i class="fab fa-html5 fa-2x"></i><p>HTML5</p></div>
+            <div class="col-6 col-md-3"><i class="fab fa-css3-alt fa-2x"></i><p>CSS3</p></div>
+            <div class="col-6 col-md-3"><i class="fab fa-google fa-2x"></i><p>Google Analytics</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="section" data-aos="fade-up">
     <div class="container">
         <h2>Experience</h2>
-        <ul>
-            <li><b>Business Analyst Intern</b> - WSU Sports Management (Sep 2024 - Present)</li>
-            <li><b>Graduate Assistant - Marketing</b> - WSU College of Applied Studies (May 2024 - Present)</li>
-            <li><b>Graduate Admin Assistant</b> - Human Performance Studies (May 2024 - Present)</li>
-            <li><b>Social Media Analyst</b> - iGrow My Biz (Jan 2023 - Jul 2023)</li>
-        </ul>
+        <div class="timeline">
+            <div class="timeline-item">Business Analyst Intern - WSU Sports Management (Sep 2024 - Present)</div>
+            <div class="timeline-item">Graduate Assistant - Marketing, WSU College of Applied Studies (May 2024 - Present)</div>
+            <div class="timeline-item">Graduate Admin Assistant - Human Performance Studies (May 2024 - Present)</div>
+            <div class="timeline-item">Social Media Analyst - iGrow My Biz (Jan 2023 - Jul 2023)</div>
+        </div>
     </div>
 </section>
 
-<section id="projects" class="section">
+<!-- Projects Section -->
+<section id="projects" class="section" data-aos="fade-up">
     <div class="container">
         <h2>Projects</h2>
-        <ul>
-            <li><b>ECRIS (Your Event Assistant):</b> Front-end development with AI chatbot.</li>
-            <li><b>Smart City Project:</b> Front-end smart interface with usability focus.</li>
-            <li><b>College Review System:</b> Dynamic evaluation platform.</li>
-        </ul>
+        <div class="row">
+            <div class="col-md-4 project-card">ECRIS: AI Chatbot Event Management System</div>
+            <div class="col-md-4 project-card">Smart City Interface Development</div>
+            <div class="col-md-4 project-card">College Review System</div>
+        </div>
     </div>
 </section>
 
-<section id="certifications" class="section">
+<!-- Certifications Section -->
+<section id="certifications" class="section" data-aos="fade-up">
     <div class="container">
         <h2>Certifications</h2>
         <ul>
             <li>Google Certified Digital Marketer</li>
             <li>UN Certified Child Rights Activist</li>
-            <li>Coursera Programming Certifications</li>
+            <li>Coursera Programming Certificates</li>
         </ul>
     </div>
 </section>
 
+<!-- Footer -->
 <footer class="text-center p-4">
     <p>&copy; 2025 Akash Pandey. All rights reserved.</p>
 </footer>
 
 <script>
     var typed = new Typed('.typing', {
-        strings: ["Business Analyst", "Web Developer", "Digital Marketer"],
+        strings: ["Data Analyst", "Web Developer", "Digital Marketer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
+
+    AOS.init();
 </script>
 
 </body>
