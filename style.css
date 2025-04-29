@@ -1,0 +1,21 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #e0eafc;
+    margin: 0;
+    padding: 0;
+}
+.hero-section {
+    padding: 60px 20px;
+}
+.section {
+    padding: 60px 20px;
+}
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+}
+footer {
+    margin-top: 40px;
+    background: #f8f9fa;
+    padding: 20px;
+}
