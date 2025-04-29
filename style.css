@@ -231,6 +231,27 @@ p {
   transition: transform 0.3s ease;
 }
 
+/* Book a Meeting Section */
+.book-meeting-section {
+  background-color: #f4faff;
+  padding: 80px 20px;
+  border-top: 1px solid #d1e6ff;
+}
+
+.book-meeting-section h2 {
+  font-size: 2.2rem;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.book-meeting-section .lead {
+  font-size: 1.2rem;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+
 .skill-item:hover img {
   transform: rotate(5deg) scale(1.05);
 }
