@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5 {
 
 p {
   font-size: 1rem;
-  line-height: 1.7;
+  line-height: 1.8;
 }
 
 /* Hero Section */
@@ -40,21 +40,28 @@ p {
 /* Button Styling */
 .btn {
   margin: 10px;
-  padding: 10px 25px;
+  padding: 12px 28px;
   font-size: 1rem;
   border-radius: 30px;
   transition: all 0.4s ease;
+  font-weight: 600;
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #007bff, #00c6ff);
+  background: linear-gradient(135deg, #0040ff, #00c6ff);
   border: none;
   color: white;
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, #00c6ff, #007bff);
+  background: linear-gradient(135deg, #00c6ff, #0040ff);
   box-shadow: 0 0 10px #00c6ff;
+  color: #fff;
+}
+
+.btn-outline-light {
+  border-color: white;
+  color: white;
 }
 
 .btn-outline-light:hover {
@@ -115,7 +122,10 @@ i.fa-2x {
   color: #007bff;
 }
 
-/* Responsive */
+.row > div {
+  margin-bottom: 30px;
+}
+
 @media (max-width: 768px) {
   .hero-section {
     padding: 40px 20px;
@@ -124,6 +134,6 @@ i.fa-2x {
 
   .btn {
     margin: 8px;
-    padding: 8px 20px;
+    padding: 10px 20px;
   }
 }
