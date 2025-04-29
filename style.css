@@ -34,12 +34,27 @@ p {
   background-size: cover;
   overflow: hidden;
 }
+/* Hero Logo Glow Effect */
 .hero-logo {
-  width: 120px; /* adjust size as needed */
+  width: 140px;
   height: auto;
   margin-bottom: 20px;
-  animation: float 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 8px rgba(255, 204, 0, 0.7)) 
+          drop-shadow(0 0 16px rgba(255, 204, 0, 0.4));
+  animation: pulse-glow 2.5s ease-in-out infinite;
 }
+
+@keyframes pulse-glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 8px rgba(255, 204, 0, 0.8)) 
+            drop-shadow(0 0 16px rgba(255, 204, 0, 0.4));
+  }
+  50% {
+    filter: drop-shadow(0 0 14px rgba(255, 204, 0, 1)) 
+            drop-shadow(0 0 28px rgba(255, 204, 0, 0.8));
+  }
+}
+
 
 /* Optional Floating Animation for Logo */
 @keyframes float {
