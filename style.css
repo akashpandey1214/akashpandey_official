@@ -25,16 +25,27 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #0056b3; /* Darker blue background for hero */
-  color: #fff;
+  background-color: #d0e7ff;
+  color: #0a0a0a;
   text-align: center;
   padding: 60px 20px;
 }
 
-.tagline {
+.hero-section h1 {
+  color: #000;
+  font-size: 3rem;
+}
+
+.hero-section .tagline {
   font-style: italic;
   margin-bottom: 10px;
   font-size: 1.2rem;
+  color: #333;
+}
+
+.hero-section .typing {
+  color: #0a0a0a;
+  font-weight: 600;
 }
 
 /* Button Styling */
