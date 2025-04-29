@@ -48,13 +48,13 @@ p {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #0040ff, #00c6ff);
+  background: linear-gradient(135deg, #0033cc, #00bfff);
   border: none;
   color: white;
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, #00c6ff, #0040ff);
+  background: linear-gradient(135deg, #00bfff, #0033cc);
   box-shadow: 0 0 10px #00c6ff;
   color: #fff;
 }
@@ -67,6 +67,17 @@ p {
 .btn-outline-light:hover {
   background: white;
   color: #007bff;
+}
+
+.btn-light {
+  background-color: #ffffff;
+  color: #007bff;
+}
+
+.btn-light:hover {
+  background-color: #e9f0ff;
+  color: #0056b3;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
 }
 
 /* Sections */
