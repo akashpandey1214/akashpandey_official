@@ -1,7 +1,7 @@
 /* Base Setup */
 body {
   font-family: 'Roboto', sans-serif;
-  background: #f9fbfd;
+  background: #d0e7ff; /* Light blue background */
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
@@ -25,7 +25,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url('https://images.unsplash.com/photo-1581091215367-59c599b29cf1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80') no-repeat center center/cover;
+  background-color: #0056b3; /* Darker blue background for hero */
   color: #fff;
   text-align: center;
   padding: 60px 20px;
@@ -107,7 +107,7 @@ p {
 
 /* Footer */
 footer {
-  background: #000;
+  background: #002244;
   color: white;
   padding: 60px 20px;
 }
