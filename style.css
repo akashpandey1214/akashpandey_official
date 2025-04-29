@@ -6,6 +6,7 @@ body {
   padding: 0;
   scroll-behavior: smooth;
   color: #111;
+  position: relative;
 }
 
 h1, h2, h3, h4, h5 {
@@ -18,34 +19,52 @@ p {
   line-height: 1.8;
 }
 
-/* Hero Section */
+/* Hero Section with AI Background */
 .hero-section {
+  position: relative;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #d0e7ff;
   text-align: center;
   padding: 80px 20px;
+  color: #ffffff;
+  background: url("portfolio_bg.jpg") no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+/* Dark overlay for readability */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  z-index: 0;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-section h1 {
-  color: #000000;
   font-size: 3.5rem;
   font-weight: 900;
+  margin-bottom: 10px;
 }
 
 .hero-section .tagline {
   font-style: italic;
-  margin-bottom: 10px;
   font-size: 1.4rem;
-  color: #222;
+  margin-bottom: 10px;
 }
 
 .typing,
 .hero-section .typing {
-  color: #000000 !important;
   font-weight: 700;
   font-size: 1.5rem;
 }
@@ -94,7 +113,7 @@ p {
 
 /* Section Styles */
 .section {
-  padding: 60px 20px; /* reduced padding for clean section flow */
+  padding: 40px 20px;
 }
 
 .section h2 {
@@ -108,8 +127,8 @@ p {
   border: none;
   background: #ffffff;
   border-radius: 20px;
-  padding: 40px;
-  margin-bottom: 50px;
+  padding: 20px;
+  margin-bottom: 30px;
   box-shadow: 0 5px 25px rgba(0,0,0,0.1);
   transition: all 0.4s ease;
 }
@@ -140,7 +159,7 @@ p {
   margin-top: 40px;
 }
 
-/* Responsive Media Query */
+/* Responsive Design */
 @media (max-width: 768px) {
   .hero-section {
     padding: 60px 20px;
