@@ -34,6 +34,14 @@
     });
   });
 </script>
+<script>
+  const mobileMenu = document.getElementById("mobile-menu");
+  const navMenu = document.getElementById("navbar-links");
+
+  mobileMenu.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+  });
+</script>
 
 <body>
 
@@ -48,7 +56,7 @@
       <span class="bar"></span>
       <span class="bar"></span>
     </div>
-    <ul class="navbar-menu">
+    <ul class="navbar-menu" id="navbar-links">
       <li><a href="#experience" class="nav-link">Experience</a></li>
       <li><a href="#education" class="nav-link">Education</a></li>
       <li><a href="#projects" class="nav-link">Projects</a></li>
