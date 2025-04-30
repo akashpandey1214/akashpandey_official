@@ -10,6 +10,145 @@ body {
   position: relative;
 }
 
+/* Glassmorphic Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  z-index: 1000;
+  padding: 10px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: background 0.3s ease;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-logo img {
+  height: 40px;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  position: relative;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #003366;
+  padding: 5px 0;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.navbar-menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #007bff;
+  transition: width 0.3s;
+}
+
+.navbar-menu a:hover,
+.navbar-menu a.active {
+  color: #007bff;
+}
+
+.navbar-menu a:hover::after,
+.navbar-menu a.active::after {
+  width: 100%;
+}
+
+/* Mobile Navbar */
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.navbar-toggle .bar {
+  height: 3px;
+  width: 25px;
+  background-color: #003366;
+  margin: 4px 0;
+  border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(8px);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-menu.show {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+}
+
+/* JavaScript for toggling mobile menu */
+<script>
+  const mobileMenu = document.getElementById("mobile-menu");
+  const navMenu = document.querySelector(".navbar-menu");
+
+  mobileMenu.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+  });
+
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 150;
+      if (pageYOffset >= sectionTop) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+      if (link.getAttribute("href").includes(current)) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
+
+
 html {
   scroll-behavior: smooth;
 }
