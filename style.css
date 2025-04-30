@@ -65,13 +65,12 @@ p {
 }
 
 #featured .card-img-top {
-  height: 200px;
-  object-fit: cover;
-  object-position: top center; /* Keeps the face in focus */
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
 }
-
 
 
 /* Optional Floating Animation for Logo */
