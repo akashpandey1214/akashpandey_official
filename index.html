@@ -26,44 +26,8 @@
       }
     });
 
-    navLinks.forEach((link) => {
-      link.classList.remove("active");
-      if (link.getAttribute("href").includes(current)) {
-        link.classList.add("active");
-      }
-    });
-  });
-</script>
-<script>
-  const mobileMenu = document.getElementById("mobile-menu");
-  const navMenu = document.getElementById("navbar-links");
-
-  mobileMenu.addEventListener("click", () => {
-    navMenu.classList.toggle("show");
-  });
-</script>
-
+  
 <body>
-
-  <!-- Navbar -->
-<nav class="navbar">
-  <div class="navbar-container">
-    <a href="#hero" class="navbar-logo">
-      <img src="images/akash_logo.png" alt="Akash Logo">
-    </a>
-    <div class="navbar-toggle" id="mobile-menu">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </div>
-    <ul class="navbar-menu" id="navbar-links">
-      <li><a href="#experience" class="nav-link">Experience</a></li>
-      <li><a href="#education" class="nav-link">Education</a></li>
-      <li><a href="#projects" class="nav-link">Projects</a></li>
-      <li><a href="#contact" class="nav-link">Contact</a></li>
-    </ul>
-  </div>
-</nav>
 
 <!-- Hero Section -->
 <header class="hero-section text-center d-flex align-items-center justify-content-center">
