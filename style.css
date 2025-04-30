@@ -375,6 +375,18 @@ p {
   margin: 0 auto 30px;
 }
 
+.tech-stack img {
+  width: 40px;
+  height: auto;
+  margin: 0 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-stack img:hover {
+  transform: scale(1.2);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
 
 .skill-item:hover img {
   transform: rotate(5deg) scale(1.05);
