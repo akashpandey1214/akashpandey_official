@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://akashpandey1214.github.io/akashpandey_official-about_me/sitemap.xml
