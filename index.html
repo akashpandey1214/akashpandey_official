@@ -11,6 +11,25 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+  function openModal(img) {
+    const modal = document.getElementById("certModal");
+    const modalImg = document.getElementById("modalImg");
+    modal.style.display = "block";
+    modalImg.src = img.src;
+    modalImg.alt = img.alt;
+  }
+
+  function closeModal() {
+    document.getElementById("certModal").style.display = "none";
+  }
+
+  // Optional: Close modal on ESC key
+  document.addEventListener("keydown", function(e) {
+    if (e.key === "Escape") closeModal();
+  });
+</script>
+
 </head>
 <body>
 <!-- Hero Section -->
@@ -376,20 +395,26 @@
   <section class="certificates-section">
   <h2>Certificates & Achievements</h2>
   <div class="certificate-grid">
-    <div class="certificate-item"><img src="images/aicte internship.png" alt="AICTE Internship Certificate" /></div>
-    <div class="certificate-item"><img src="images/bits_and_bytes_google.png" alt="Google Networking Certificate" /></div>
-    <div class="certificate-item"><img src="images/Coursera cybersecurity for business-1.png" alt="Cybersecurity Business Certificate" /></div>
-    <div class="certificate-item"><img src="images/cybersecurity essentials-1.png" alt="Cybersecurity Essentials" /></div>
-    <div class="certificate-item"><img src="images/cybersecurity-1.png" alt="Intro to Cybersecurity" /></div>
-    <div class="certificate-item"><img src="images/data analytics certificate-1.png" alt="Data Analytics" /></div>
-    <div class="certificate-item"><img src="images/google digital marketing.png" alt="Digital Marketing" /></div>
-    <div class="certificate-item"><img src="images/Intro_to_cyber_security.png" alt="Intro to Cybersecurity (Coursera)" /></div>
-    <div class="certificate-item"><img src="images/microsoft ai.png" alt="Microsoft AI Classroom" /></div>
-    <div class="certificate-item"><img src="images/programming_fundamentals_duke.png" alt="Programming Fundamentals Duke" /></div>
-    <div class="certificate-item"><img src="images/tech_support_google.png" alt="Tech Support Fundamentals" /></div>
-    <div class="certificate-item"><img src="images/Z_os.png" alt="IBM z/OS Certificate" /></div>
+    <div class="certificate-item"><img src="images/aicte internship.png" alt="AICTE Internship Certificate" onclick="openModal(this)" /></div>
+    <div class="certificate-item"><img src="images/bits_and_bytes_google.png" alt="Google Networking Certificate" onclick="openModal(this)" /></div>
+    <div class="certificate-item"><img src="images/Coursera cybersecurity for business-1.png" alt="Cybersecurity Business Certificate" onclick="openModal(this)" /></div>
+    <div class="certificate-item"><img src="images/cybersecurity essentials-1.png" alt="Cybersecurity Essentials" onclick="openModal(this)" /></div>
+    <div class="certificate-item"><img src="images/cybersecurity-1.png" alt="Intro to Cybersecurity" onclick="openModal(this)" /></div>
+    <div class="certificate-item"><img src="images/data analytics certificate-1.png" alt="Data Analytics" onclick="openModal(this)" /></div>
+    <div class="certificate-item"><img src="images/google digital marketing.png" alt="Digital Marketing" onclick="openModal(this)" /></div>
+    <div class="certificate-item"><img src="images/Intro_to_cyber_security.png" alt="Intro to Cybersecurity (Coursera)" onclick="openModal(this)" /></div>
+    <div class="certificate-item"><img src="images/microsoft ai.png" alt="Microsoft AI Classroom" onclick="openModal(this)" /></div>
+    <div class="certificate-item"><img src="images/programming_fundamentals_duke.png" alt="Programming Fundamentals Duke" onclick="openModal(this)" /></div>
+    <div class="certificate-item"><img src="images/tech_support_google.png" alt="Tech Support Fundamentals" onclick="openModal(this)" /></div>
+    <div class="certificate-item"><img src="images/Z_os.png" alt="IBM z/OS Certificate" onclick="openModal(this)" /></div>
   </div>
 </section>
+
+  <!-- Modal for Zoom -->
+<div id="certModal" class="cert-modal" onclick="closeModal()">
+  <span class="cert-close">&times;</span>
+  <img class="cert-modal-content" id="modalImg" alt="Zoomed Certificate">
+</div>
   
 <!-- Contact / Schedule Section -->
 <section id="contact" class="experience-section">
@@ -400,6 +425,24 @@
   </div>
 </section>
 
+<script>
+  function openModal(img) {
+    const modal = document.getElementById("certModal");
+    const modalImg = document.getElementById("modalImg");
+    modal.style.display = "block";
+    modalImg.src = img.src;
+    modalImg.alt = img.alt;
+  }
+
+  function closeModal() {
+    document.getElementById("certModal").style.display = "none";
+  }
+
+  document.addEventListener("keydown", function(e) {
+    if (e.key === "Escape") closeModal();
+  });
+</script>
+  
 <!-- Footer Section -->
 <footer class="footer-section text-center p-5">
   <h4 class="footer-heading"><span class="typing-footer"></span></h4>
